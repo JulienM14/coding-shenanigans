@@ -7,6 +7,6 @@ int main() {
     cout << "Please input your name! \n";
     cin >> userName;
     cout << "Your name is " << userName;
-    cout << "running this on windows is going to fucking suck";
+    cout << "\n running this on windows is going to fucking suck";
 }
 
