@@ -1,21 +1,20 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 double numbergrabber() 
 {
     double number;
-    cout << "Input a number! \n";
-    cin >> number;
+    printf("Please input a number \n");
+    scanf("%lf", &number);
     return number;
 }
 
-int functiongrabber() 
+int functiongrabber()
 {
     int function;
-    cout << "Input a function! \n";
-    cout << "Addition (1), Subtraction (2) \n";
-    cout << "Mulitplication (3), Division (4) \n";
-    cin >> function;
+    printf("Please input a function \n");
+    printf("Addition (1), Subtraction (2) \n");
+    printf("Multiplication (3), Division (4) \n");
+    scanf("%d", &function);
     return function;
 }
 
@@ -26,15 +25,15 @@ double mathcompleter(double x, double y, int function)
     {
         answer = x + y;
     }
-    else if (function == 2) 
+    else if (function == 2)
     {
         answer = x - y;
     }
-    else if (function == 3) 
+    else if (function == 3)
     {
         answer = x * y;
     }
-    else if (function == 4) 
+    else if (function == 4)
     {
         answer = x / y;
     }
@@ -51,5 +50,6 @@ int main()
     double y = numbergrabber();
     int function = functiongrabber();
     double answer = mathcompleter(x, y, function);
-    cout << "Your answer is " << answer << "\n";
+    printf("Your answer is %lf", answer);
+    printf("\n");
 }
