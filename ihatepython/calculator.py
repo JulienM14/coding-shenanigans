@@ -25,6 +25,7 @@ def mathcompleter(x, y, function):
         answer = 0
     return answer
 
+
 x = numbergrabber()
 y = numbergrabber()
 function = functiongrabber()

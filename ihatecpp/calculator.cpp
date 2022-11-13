@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-double numbergrabber() 
+double numbergrabber()
 {
     double number;
     cout << "Input a number! \n";
@@ -9,7 +9,7 @@ double numbergrabber()
     return number;
 }
 
-int functiongrabber() 
+int functiongrabber()
 {
     int function;
     cout << "Input a function! \n";
@@ -19,33 +19,33 @@ int functiongrabber()
     return function;
 }
 
-double mathcompleter(double x, double y, int function) 
+double mathcompleter(double x, double y, int function)
 {
     double answer;
-    if (function == 1) 
+    if (function == 1)
     {
         answer = x + y;
     }
-    else if (function == 2) 
+    else if (function == 2)
     {
         answer = x - y;
     }
-    else if (function == 3) 
+    else if (function == 3)
     {
         answer = x * y;
     }
-    else if (function == 4) 
+    else if (function == 4)
     {
         answer = x / y;
     }
-    else 
+    else
     {
         answer = 0;
     }
     return answer;
 }
 
-int main() 
+int main()
 {
     double x = numbergrabber();
     double y = numbergrabber();

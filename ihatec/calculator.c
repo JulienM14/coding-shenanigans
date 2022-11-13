@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-double numbergrabber() 
+double numbergrabber()
 {
     double number;
     printf("Please input a number \n");
@@ -18,10 +18,10 @@ int functiongrabber()
     return function;
 }
 
-double mathcompleter(double x, double y, int function) 
+double mathcompleter(double x, double y, int function)
 {
     double answer;
-    if (function == 1) 
+    if (function == 1)
     {
         answer = x + y;
     }
@@ -37,14 +37,14 @@ double mathcompleter(double x, double y, int function)
     {
         answer = x / y;
     }
-    else 
+    else
     {
         answer = 0;
     }
     return answer;
 }
 
-int main() 
+int main()
 {
     double x = numbergrabber();
     double y = numbergrabber();
