@@ -8,4 +8,3 @@ int main() {
     cin >> userName;
     cout << "Your name is " << userName;
 }
-
