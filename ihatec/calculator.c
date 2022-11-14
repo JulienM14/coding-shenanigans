@@ -2,6 +2,7 @@
 
 double numbergrabber()
 {
+    printf("\e[1;1H\e[2J");
     double number;
     printf("Please input a number \n");
     scanf("%lf", &number);
@@ -10,16 +11,18 @@ double numbergrabber()
 
 int functiongrabber()
 {
+    printf("\e[1;1H\e[2J");
     int function;
     printf("Please input a function \n");
     printf("Addition (1), Subtraction (2) \n");
     printf("Multiplication (3), Division (4) \n");
-    scanf("%d", &function);
+    scanf("%d", & function);
     return function;
 }
 
 double mathcompleter(double x, double y, int function)
 {
+    printf("\e[1;1H\e[2J");
     double answer;
     if (function == 1)
     {
@@ -46,6 +49,7 @@ double mathcompleter(double x, double y, int function)
 
 int main()
 {
+    printf("\e[1;1H\e[2J");
     double x = numbergrabber();
     double y = numbergrabber();
     int function = functiongrabber();
