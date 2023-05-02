@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(168, 193, 199);
+    font-style: normal;
+    font-family: cursive;
+}
+.Header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/**//**//**//**//**//**//**//**/
+/**/#intro{                 /**/
+/**/    font-size: 20px;    /**/
+/**/    font-stretch: 20px; /**/
+/**/                        /**/
+/**/}                       /**/
+/**//**//**//**//**//**//**//**/
+ul{
+    background-color: aliceblue ;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    /* background-color: chartreuse; */
+}
+li a:hover{
+    background-color: rgb(83, 167, 0);
+}
+h2{
+    animation: displace 10s infinite;
+}
+@keyframes displace{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+        40% {
+        transform: translateY(-300px);
+      }
+        60% {
+        transform: translateY(-150px);
+      } 
+}
+
+
+
