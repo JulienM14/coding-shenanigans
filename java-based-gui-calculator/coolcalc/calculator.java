@@ -32,11 +32,11 @@ public class calculator {
     public static String logFileLocation;
     public static FileWriter logFileWriter;
     public static double answer;
-    // coolcalc\logfiles
+    // coolcalc\logfiles java based gui calculator\coolcalc\logfiles
     public static void main(String[] args) {
         launchTime = LocalDateTime.now();
-        logFileLocation = "coolcalc/" + "logfiles/" + dateFormat.format(launchTime) + ".txt";
-        System.out.println("coolcalc/" + "logfiles/" + dateFormat.format(launchTime) + ".txt");
+        logFileLocation = "java-based-gui-calculator/coolcalc/" + "logfiles/" + dateFormat.format(launchTime) + ".txt";
+        System.out.println("java-based-gui-calculator/coolcalc/" + "logfiles/" + dateFormat.format(launchTime) + ".txt");
         logFile = new File(logFileLocation);
         try {
             logFileWriter = new FileWriter(logFileLocation);
